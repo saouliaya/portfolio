@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aya Saouli — Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="description" content="Portfolio of Aya Saouli — Web & Mobile Developer" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+  </div>
+
+  <header>
+    <div class="nav-wrap" role="navigation" aria-label="Main Navigation">
+      <div class="brand">Aya Saouli</div>
+      <nav>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#tps">TPs</a>
+          <a href="#contact">Contact</a>
+          <button id="mode-toggle" class="icon-btn" style="margin-left:10px;">🌞</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="home" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-left card fade-in">
+        <div class="eyebrow">Hello — I'm</div>
+        <h1 id="hero-heading">Aya Saouli</h1>
+        <div style="height:6px"></div>
+        <div aria-live="polite" class="typing" id="type-target"> </div>
+        <p style="color:var(--muted);margin-top:12px">I build modern web & mobile apps with performance and accessibility in mind. I love clean code, good UX, and shipping delightful micro-interactions.</p>
+        <div style="margin-top:18px;display:flex;gap:10px">
+          <a class="icon-btn" href="#projects" aria-label="See projects" style="width: fit-content;">Projects</a>
+          <a class="icon-btn" href="#contact" aria-label="Contact me" style="width: fit-content;">Contact</a>
+        </div>
+        <div class="socials" aria-hidden="false">
+            <a href="https://github.com/saouliaya" class="social"><i class="fab fa-github"></i></a>
+            <a href="ayasaouli405@gmail.com" class="social"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/aya-saouli-36179a344/" class="social"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right fade-in">
+        <div class="avatar" aria-hidden="true">
+          <!-- Placeholder image - replace with your photo -->
+          <img src="images/aya.png" alt="Photo of Aya Saouli (replace with your photo)"> 
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="fade-in" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <div class="card about" style="margin-top:12px">
+        <div class="text">
+          <p>Hello — I'm Aya, a Web and Mobile Developer passionate about creating responsive, accessible, and performant applications. I work across the full stack (front-end and back-end) and enjoy turning ideas into polished products.</p>
+          <ul style="color:var(--muted);margin-top:12px">
+            <li>Focused on clean code, automated testing, and maintainable architecture.</li>
+            <li>Strong interest in UX, animations, and developer tooling.</li>
+            <li>Open to collaboration &amp; freelance projects.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="fade-in" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <div style="margin-top:12px" class="skills-grid">
+        <!-- List of skills with small icon blocks -->
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">H</div><div>HTML</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">T</div><div>Tailwind CSS</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">N</div><div>Next.js</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">D</div><div>Django</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">R</div><div>React</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">F</div><div>Flutter</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">Py</div><div>Python</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">J</div><div>Java</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">PG</div><div>PostgreSQL</div></div>
+        <div class="skill" tabindex="0"><div class="icon" aria-hidden="true">M</div><div>MongoDB</div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <div style="margin-top:12px" class="projects-grid">
+        <!-- Project cards - replace hrefs and projectname.png with real links and images -->
+        <a class="project" href="#" onclick="openProject(event,'movie/index.html')" aria-label="Movies Bot project">
+          <img src="images/movie.png" alt="Preview image for Movies Bot">
+          <div class="overlay" aria-hidden="true"></div>
+          <div class="meta"><strong>🎬 Movies Bot</strong><div style="color:var(--muted);font-size:14px">Chatbot to search movie data and recommendations.</div></div>
+        </a>
+
+        <a class="project" href="#" onclick="openProject(event,'recipe.html')" aria-label="Receipt Management project">
+          <img src="images/recipe.png" alt="Preview image for Receipt Management (replace with projects/receipt-management.png)">
+          <div class="overlay" aria-hidden="true"></div>
+          <div class="meta"><strong>📜 Receipt Management</strong><div style="color:var(--muted);font-size:14px; text-decoration: none;" >Tool to manage receipts and generate reports.</div></div>
+        </a>
+
+        <a class="project" href="#" onclick="openProject(event,'https://www.figma.com/make/shb8KeMPPJKSkb6LqEU4ab/Stock-Management-Web-Platform?node-id=0-1&p=f&fullscreen=1https://example.com')" aria-label="Stock Manager project">
+          <img src="images/stock.png" alt="Preview image for Stock Manager (replace with projects/stock-manager.png)">
+          <div class="overlay" aria-hidden="true"></div>
+          <div class="meta"><strong>📦 Stock Manager</strong><div style="color:var(--muted);font-size:14px">Inventory & stock management system.</div></div>
+        </a>
+      </div>
+    </section>
+
+    <section id="tps" class="fade-in" aria-labelledby="tps-heading">
+      <h2 id="tps-heading">TPs</h2>
+      <div class="card tps">To Be Filled Later</div>
+    </section>
+
+    <section id="contact" class="fade-in" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <div style="margin-top:12px" class="card contact-grid">
+        <form id="contact-form" aria-label="Contact form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required aria-required="true" placeholder="Your name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required aria-required="true" placeholder="you@example.com">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Write your message..."></textarea>
+
+          <div style="display:flex;gap:10px;align-items:center">
+            <button type="submit" class="icon-btn" style="padding:10px 16px; width:70px;">Send</button>
+            <div id="form-status" style="color:var(--muted);font-size:14px"></div>
+          </div>
+        </form>
+
+        <aside style="padding:12px;display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+          <p style="color:var(--muted)">Or reach me on:</p>
+            <div class="socials" aria-hidden="false">
+            <a href="https://github.com/saouliaya" class="social"><i class="fab fa-github"></i></a>
+            <a href="ayasaouli405@gmail.com" class="social"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/aya-saouli-36179a344/" class="social"><i class="fab fa-linkedin"></i></a>
+        </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer style="text-align:center;color:var(--muted);margin:36px 0">© <span id="year"></span> Aya Saouli — Built with ❤️</footer>
+  </main>
+
+  <!-- Chat Toggle + Box -->
+  <button class="chat-toggle" id="chat-toggle" aria-controls="chatbox" aria-expanded="false" aria-label="Open chat">
+    🧠
+  </button>
+  <div class="chatbox" id="chatbox" role="dialog" aria-label="Chat about Aya Saouli">
+    <header>
+      <div style="flex:1">
+        <strong>Aya's Assistant</strong>
+        <div style="color:var(--muted);font-size:13px">Preset Q&amp;A — customize later</div>
+      </div>
+      <button id="chat-close" aria-label="Close chat" style="background:transparent;border:none;color:var(--muted);cursor:pointer">✕</button>
+    </header>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"></div>
+    <div class="chat-input">
+      <input id="chat-input" placeholder="Ask about Aya (eg. skills, projects)" aria-label="Chat input">
+      <button id="chat-send" class="icon-btn">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
